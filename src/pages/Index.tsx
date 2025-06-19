@@ -7,6 +7,8 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import AboutSection from '../components/AboutSection';
 import ImageGallery from '../components/ImageGallery';
 import TestimonialsSection from '../components/TestimonialsSection';
+import ContactPreview from '../components/ContactPreview';
+import LocationMap from '../components/LocationMap';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -20,6 +22,8 @@ const Index = () => {
         <AboutSection />
         <ImageGallery />
         <TestimonialsSection />
+        <LocationMap />
+        <ContactPreview />
       </main>
       <Footer />
     </div>

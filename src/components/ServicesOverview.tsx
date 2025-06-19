@@ -166,10 +166,10 @@ const ServicesOverview = () => {
                 Get Help Now
               </Link>
               <Link 
-                to="/book-service"
+                to="/blog"
                 className="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200"
               >
-                Book Appointment
+                Read Our Blog
               </Link>
             </div>
           </div>

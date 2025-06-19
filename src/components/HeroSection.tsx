@@ -88,7 +88,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-[85vh] overflow-hidden">
       {/* Background Slides */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
@@ -109,12 +109,12 @@ const HeroSection = () => {
               }}
             ></div>
             
-            {/* Logo overlay on background */}
-            <div className="absolute top-1/2 right-10 transform -translate-y-1/2 z-5 opacity-20">
+            {/* Logo overlay on background with reduced opacity and size */}
+            <div className="absolute top-1/2 right-10 transform -translate-y-1/2 z-5 opacity-10">
               <img 
                 src="/lovable-uploads/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
                 alt="Mutunga Enterprise Ltd Background Logo" 
-                className="w-64 h-64 object-contain filter brightness-200"
+                className="w-48 h-48 object-contain filter brightness-200"
               />
             </div>
           </div>
