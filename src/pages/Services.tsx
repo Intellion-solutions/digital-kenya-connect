@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { FileText, Printer, Palette, GraduationCap, Globe, CreditCard, Briefcase, Settings, ChevronDown, ChevronUp, CheckCircle } from 'lucide-react';
+import { FileText, Printer, Palette, GraduationCap, Globe, CreditCard, Briefcase, Settings, ChevronDown, ChevronUp, CheckCircle, Truck, Building, Users2, Monitor } from 'lucide-react';
 
 const Services = () => {
   const [expandedCategory, setExpandedCategory] = useState<string | null>('ecitizen');
@@ -31,6 +30,106 @@ const Services = () => {
         "Single Status Certificate",
         "Change of Name Deed Poll",
         "Affidavit Services"
+      ]
+    },
+    {
+      id: 'fleet',
+      icon: Truck,
+      title: "Fleet Booking Services",
+      description: "Complete transportation and logistics solutions for all your travel needs",
+      color: "from-blue-500 to-blue-600",
+      services: [
+        "Bus Ticket Booking (All Routes)",
+        "Matatu Booking Services",
+        "Car Rental Bookings",
+        "Truck Hiring Services",
+        "Corporate Transport Solutions",
+        "Airport Transfer Bookings",
+        "Tour & Safari Vehicle Booking",
+        "Wedding Car Rentals",
+        "Event Transportation",
+        "Logistics Coordination",
+        "Driver Booking Services",
+        "Fleet Management Solutions",
+        "Vehicle Insurance Processing",
+        "Route Planning Services",
+        "Emergency Transport Booking",
+        "Cargo Transportation"
+      ]
+    },
+    {
+      id: 'construction',
+      icon: Building,
+      title: "Building & Construction Solutions",
+      description: "Comprehensive construction and building services from planning to completion",
+      color: "from-orange-500 to-orange-600",
+      services: [
+        "Building Plan Approvals",
+        "Construction Permits",
+        "Architectural Drawings",
+        "Structural Design Services",
+        "Quantity Surveying",
+        "Project Management",
+        "Construction Supervision",
+        "Building Material Sourcing",
+        "Contractor Connections",
+        "Land Survey Services",
+        "Environmental Impact Assessments",
+        "Building Inspections",
+        "Renovation Planning",
+        "Interior Design Services",
+        "Cost Estimation",
+        "Construction Documentation"
+      ]
+    },
+    {
+      id: 'consultancy',
+      icon: Users2,
+      title: "Business Consultancy Services",
+      description: "Professional business advisory and consultancy services for growth and success",
+      color: "from-purple-500 to-purple-600",
+      services: [
+        "Business Plan Development",
+        "Market Research & Analysis",
+        "Financial Planning & Advisory",
+        "Investment Guidance",
+        "Business Registration Support",
+        "Tax Advisory Services",
+        "Legal Compliance Consulting",
+        "Strategic Planning",
+        "Operations Optimization",
+        "HR Consulting Services",
+        "Marketing Strategy Development",
+        "Brand Development",
+        "Risk Management",
+        "Performance Management",
+        "Business Process Improvement",
+        "Growth Strategy Consulting"
+      ]
+    },
+    {
+      id: 'training',
+      icon: Monitor,
+      title: "Computer Training & General Services",
+      description: "Comprehensive computer training and digital literacy programs for all skill levels",
+      color: "from-teal-500 to-teal-600",
+      services: [
+        "Basic Computer Skills",
+        "Microsoft Office Training",
+        "Internet & Email Usage",
+        "Social Media Training",
+        "Digital Marketing Course",
+        "Web Design Training",
+        "Graphic Design Course",
+        "Data Entry Training",
+        "Accounting Software Training",
+        "Online Business Setup",
+        "E-commerce Training",
+        "Digital Banking Training",
+        "Cybersecurity Awareness",
+        "Mobile Phone Training",
+        "Software Installation",
+        "Computer Maintenance"
       ]
     },
     {
@@ -250,7 +349,7 @@ const Services = () => {
             Complete Digital Services
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Over 100 professional services available 24/7 to meet all your digital needs
+            Over 150 professional services available 24/7 to meet all your digital needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
@@ -259,6 +358,35 @@ const Services = () => {
             <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-200">
               Get Help Now
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission, Vision, Objectives */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="text-center p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
+              <h3 className="text-2xl font-bold text-green-800 mb-4">Our Mission</h3>
+              <p className="text-gray-700 leading-relaxed">
+                To provide accessible, efficient, and reliable digital services that empower individuals 
+                and businesses across Kenya to thrive in the digital age.
+              </p>
+            </div>
+            <div className="text-center p-8 bg-gradient-to-br from-black to-gray-800 text-white rounded-xl">
+              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+              <p className="text-gray-200 leading-relaxed">
+                To be Kenya's leading digital services center, bridging the gap between traditional 
+                processes and modern technology for all Kenyans.
+              </p>
+            </div>
+            <div className="text-center p-8 bg-gradient-to-br from-red-50 to-red-100 rounded-xl">
+              <h3 className="text-2xl font-bold text-red-800 mb-4">Our Objectives</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Excellence in service delivery, continuous innovation, customer satisfaction, 
+                and contributing to Kenya's digital transformation journey.
+              </p>
+            </div>
           </div>
         </div>
       </section>

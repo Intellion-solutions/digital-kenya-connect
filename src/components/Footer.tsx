@@ -8,18 +8,17 @@ const Footer = () => {
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
     { name: 'Pricing', path: '/pricing' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Contact', path: '/contact' },
-    { name: 'Book Service', path: '/book-service' }
+    { name: 'Gallery', path: '/gallery' },
+    { name: 'Contact', path: '/contact' }
   ];
 
   const services = [
     'eCitizen Services',
-    'Government Applications',
-    'Printing & Design',
-    'Student Services',
-    'Business Support',
-    'Online Services'
+    'Fleet Booking',
+    'Building & Construction',
+    'Business Consultancy',
+    'Computer Training',
+    'Printing & Design'
   ];
 
   const govServices = [
@@ -40,10 +39,10 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-red-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">KC</span>
+                <span className="text-white font-bold text-xl">ME</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">Kenya Cyber</h3>
+                <h3 className="text-xl font-bold">Mutunga Enterprise</h3>
                 <p className="text-gray-400 text-sm">Digital Services Center</p>
               </div>
             </div>
@@ -111,7 +110,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-400">
-                    Kenya Cyber Digital Center<br />
+                    Mutunga Enterprise<br />
                     Main Street, Nairobi<br />
                     Kenya
                   </p>
@@ -162,18 +161,26 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
-              © 2024 Kenya Cyber Digital Services Center. All rights reserved.
-            </p>
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+              <p className="text-gray-400 text-sm">
+                © 2024 Mutunga Enterprise. All rights reserved.
+              </p>
+              <a 
+                href="https://wa.me/254710245118"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center space-x-1"
+              >
+                <span>Website built and powered by</span>
+                <span className="font-semibold text-green-400">Intellion Ltd</span>
+              </a>
+            </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
                 Privacy Policy
               </Link>
               <Link to="/terms" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
                 Terms of Service
-              </Link>
-              <Link to="/sitemap" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
-                Sitemap
               </Link>
             </div>
           </div>
