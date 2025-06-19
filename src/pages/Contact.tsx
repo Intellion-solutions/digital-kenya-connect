@@ -1,18 +1,26 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { MapPin, Phone, Mail, Clock, MessageCircle, Send, User, FileText, Calendar } from 'lucide-react';
+import { useSearchParams } from 'react-router-dom';
 
 const Contact = () => {
+  const [searchParams] = useSearchParams();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    service: '',
+    service: searchParams.get('service') || '',
     message: '',
     urgency: 'normal'
   });
+
+  useEffect(() => {
+    const serviceParam = searchParams.get('service');
+    if (serviceParam) {
+      setFormData(prev => ({ ...prev, service: serviceParam }));
+    }
+  }, [searchParams]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -23,8 +31,26 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
+    
+    // Create WhatsApp message
+    const message = `Hello! I would like to book a service.\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nService: ${formData.service}\nUrgency: ${formData.urgency}\nMessage: ${formData.message}`;
+    const whatsappUrl = `https://wa.me/254726564132?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const handleEmailContact = () => {
+    const subject = 'Service Inquiry - Mutunga Enterprise Ltd';
+    const body = `Hello,\n\nI would like to inquire about your services.\n\nBest regards,\n${formData.name || '[Your Name]'}`;
+    const mailtoUrl = `mailto:mutuvince@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+  };
+
+  const handleWhatsAppContact = () => {
+    const message = 'Hello! I would like to inquire about your services.';
+    const whatsappUrl = `https://wa.me/254726564132?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const services = [
@@ -100,9 +126,12 @@ const Contact = () => {
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">Email Us</h3>
                       <p className="text-gray-600">
-                        <a href="mailto:mutuvince@gmail.com" className="hover:text-blue-600 transition-colors">
+                        <button 
+                          onClick={handleEmailContact}
+                          className="hover:text-blue-600 transition-colors cursor-pointer"
+                        >
                           mutuvince@gmail.com
-                        </a>
+                        </button>
                       </p>
                     </div>
                   </div>
@@ -114,9 +143,12 @@ const Contact = () => {
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">WhatsApp</h3>
                       <p className="text-gray-600">
-                        <a href="https://wa.me/254726564132" className="hover:text-green-600 transition-colors">
+                        <button 
+                          onClick={handleWhatsAppContact}
+                          className="hover:text-green-600 transition-colors cursor-pointer"
+                        >
                           Chat with us instantly
-                        </a>
+                        </button>
                       </p>
                     </div>
                   </div>
@@ -147,13 +179,13 @@ const Contact = () => {
                     <Phone className="w-5 h-5" />
                     <span>Call Now</span>
                   </a>
-                  <a 
-                    href="https://wa.me/254726564132"
+                  <button 
+                    onClick={handleWhatsAppContact}
                     className="bg-green-600 text-white p-4 rounded-lg text-center font-semibold hover:bg-green-700 transition-colors duration-200 flex items-center justify-center space-x-2"
                   >
                     <MessageCircle className="w-5 h-5" />
                     <span>WhatsApp</span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -287,7 +319,7 @@ const Contact = () => {
                     className="w-full bg-gradient-to-r from-green-600 to-red-600 text-white py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2"
                   >
                     <Send className="w-5 h-5" />
-                    <span>Send Message</span>
+                    <span>Send via WhatsApp</span>
                   </button>
                 </form>
               </div>
@@ -296,7 +328,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section (Placeholder) */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Find Us Here</h2>

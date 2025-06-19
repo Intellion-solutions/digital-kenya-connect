@@ -56,13 +56,17 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-red-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">KC</span>
+          <Link to="/" className="flex items-center space-x-4">
+            <div className="w-16 h-16 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
+                alt="Mutunga Enterprise Ltd Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Kenya Cyber</h1>
-              <p className="text-sm text-gray-600">Digital Services Center</p>
+              <h1 className="text-2xl font-black text-gray-900">Mutunga Enterprise Ltd</h1>
+              <p className="text-sm text-gray-600 font-medium">Your Digital Gateway</p>
             </div>
           </Link>
 
@@ -112,7 +116,7 @@ const Header = () => {
               />
             </div>
             <Link 
-              to="/book-service"
+              to="/contact"
               className="bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors duration-200"
             >
               Book Service
@@ -143,7 +147,7 @@ const Header = () => {
                 </Link>
               ))}
               <Link
-                to="/book-service"
+                to="/contact"
                 className="block w-full text-center bg-red-600 text-white py-2 rounded-lg font-medium mt-4"
                 onClick={() => setIsMenuOpen(false)}
               >
