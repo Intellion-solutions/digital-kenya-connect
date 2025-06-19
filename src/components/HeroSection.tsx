@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, MapPin, Clock, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,7 +12,7 @@ const HeroSection = () => {
       title: "Complete eCitizen Services",
       subtitle: "Get all your government services done quickly and efficiently",
       description: "Birth certificates, ID cards, passports, driving licenses, and more - all under one roof",
-      image: "/lovable-uploads/ecitizen-services.jpg",
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
       cta: "Get eCitizen Help",
       link: "/contact?service=eCitizen Services"
     },
@@ -29,7 +30,7 @@ const HeroSection = () => {
       title: "Professional Printing & Design",
       subtitle: "High-quality printing services for all your needs",
       description: "From business cards to large format printing, posters, banners, and bulk copying",
-      image: "/lovable-uploads/printing-services.jpg",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
       cta: "View Printing Services",
       link: "/contact?service=Printing Services"
     },
@@ -38,7 +39,7 @@ const HeroSection = () => {
       title: "Digital Skills & Training",
       subtitle: "Learn essential computer skills for the modern world",
       description: "Computer basics, Microsoft Office, internet usage, and digital literacy programs",
-      image: "/lovable-uploads/computer-training.jpg",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
       cta: "Start Learning",
       link: "/contact?service=Computer Training"
     },
@@ -47,16 +48,34 @@ const HeroSection = () => {
       title: "Business Solutions Center",
       subtitle: "Complete business support services",
       description: "CV writing, business registration, tax services, and professional consultations",
-      image: "/lovable-uploads/business-center.jpg",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
       cta: "Explore Business Services",
       link: "/contact?service=Business Consultancy"
+    },
+    {
+      id: 6,
+      title: "Software Development Services",
+      subtitle: "Custom web and software solutions",
+      description: "Professional web development, mobile apps, and custom software solutions for your business",
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      cta: "View Our Work",
+      link: "/contact?service=Software Development"
+    },
+    {
+      id: 7,
+      title: "Professional Consultancy",
+      subtitle: "Expert guidance for your digital journey",
+      description: "Get professional advice on technology, business processes, and digital transformation",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      cta: "Book Consultation",
+      link: "/contact?service=Professional Consultancy"
     }
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(timer);
   }, []);
 
@@ -79,14 +98,25 @@ const HeroSection = () => {
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+            {/* Enhanced background with better opacity */}
+            <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
             <div 
-              className="w-full h-full bg-cover bg-center bg-gradient-to-r from-green-900 via-black to-red-900"
+              className="w-full h-full bg-cover bg-center bg-no-repeat"
               style={{ 
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${slide.image})`,
-                backgroundBlendMode: 'overlay'
+                backgroundImage: `url(${slide.image})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
               }}
             ></div>
+            
+            {/* Logo overlay on background */}
+            <div className="absolute top-1/2 right-10 transform -translate-y-1/2 z-5 opacity-20">
+              <img 
+                src="/lovable-uploads/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
+                alt="Mutunga Enterprise Ltd Background Logo" 
+                className="w-64 h-64 object-contain filter brightness-200"
+              />
+            </div>
           </div>
         ))}
       </div>
@@ -98,11 +128,20 @@ const HeroSection = () => {
             <span className="inline-block px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-full mb-4">
               🇰🇪 Proudly Serving Kenya
             </span>
-            <div className="mb-4">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Mutunga Enterprise Ltd
-              </h2>
-              <p className="text-green-300 text-lg">Your Trusted Digital Gateway</p>
+            <div className="mb-4 flex items-center space-x-4">
+              <div className="w-20 h-20 flex items-center justify-center bg-white bg-opacity-10 backdrop-blur-sm rounded-full">
+                <img 
+                  src="/lovable-uploads/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
+                  alt="Mutunga Enterprise Ltd Logo" 
+                  className="w-16 h-16 object-contain"
+                />
+              </div>
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                  Mutunga Enterprise Ltd
+                </h2>
+                <p className="text-green-300 text-lg">Your Trusted Digital Gateway</p>
+              </div>
             </div>
           </div>
           

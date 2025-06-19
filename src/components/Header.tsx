@@ -55,9 +55,9 @@ const Header = () => {
       {/* Main Navigation */}
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo - Enhanced size */}
           <Link to="/" className="flex items-center space-x-4">
-            <div className="w-16 h-16 flex items-center justify-center">
+            <div className="w-20 h-20 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
                 alt="Mutunga Enterprise Ltd Logo" 

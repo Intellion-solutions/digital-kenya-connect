@@ -1,79 +1,92 @@
 
 import React, { useState } from 'react';
-import { X, ZoomIn } from 'lucide-react';
+import { X, ZoomIn, Eye } from 'lucide-react';
 
 const ImageGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImageData, setSelectedImageData] = useState<any>(null);
 
   const galleryImages = [
     {
       id: 1,
-      src: "/lovable-uploads/printing-service-1.jpg",
+      src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "High-Quality Document Printing",
-      description: "Professional printing services for all your document needs"
+      description: "Professional printing services for all your document needs",
+      category: "printing"
     },
     {
       id: 2,
-      src: "/lovable-uploads/large-format-printer.jpg", 
+      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", 
       title: "Large Format Printing",
-      description: "Banners, posters, and large-scale printing solutions"
+      description: "Banners, posters, and large-scale printing solutions",
+      category: "printing"
     },
     {
       id: 3,
-      src: "/lovable-uploads/bulk-photocopying.jpg",
+      src: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Bulk Photocopying Services", 
-      description: "Fast and efficient bulk copying for businesses and students"
+      description: "Fast and efficient bulk copying for businesses and students",
+      category: "printing"
     },
     {
       id: 4,
-      src: "/lovable-uploads/ecitizen-assistance.jpg",
+      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "eCitizen Form Assistance",
-      description: "Customers getting help with government online services"
+      description: "Customers getting help with government online services",
+      category: "ecitizen"
     },
     {
       id: 5,
-      src: "/lovable-uploads/scanning-lamination.jpg",
+      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Scanning & Lamination",
-      description: "Document scanning and professional lamination services"
+      description: "Document scanning and professional lamination services",
+      category: "printing"
     },
     {
       id: 6,
-      src: "/lovable-uploads/creative-design-work.jpg",
+      src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Creative Design in Progress",
-      description: "Professional graphic design and branding services"
+      description: "Professional graphic design and branding services",
+      category: "design"
     },
     {
       id: 7,
-      src: "/lovable-uploads/poster-banner-production.jpg",
+      src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Poster & Banner Production",
-      description: "Custom poster and banner design and printing"
+      description: "Custom poster and banner design and printing",
+      category: "printing"
     },
     {
       id: 8,
-      src: "/lovable-uploads/students-typing.jpg",
+      src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Student Typing Services",
-      description: "Students working on assignments and projects"
+      description: "Students working on assignments and projects",
+      category: "training"
     },
     {
       id: 9,
-      src: "/lovable-uploads/government-offices.jpg",
+      src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Government Office Support",
-      description: "Assistance with various government office procedures"
+      description: "Assistance with various government office procedures",
+      category: "ecitizen"
     },
     {
       id: 10,
-      src: "/lovable-uploads/customer-computer-help.jpg",
+      src: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Personal Computer Assistance",
-      description: "Staff helping customers with computer tasks and training"
+      description: "Staff helping customers with computer tasks and training",
+      category: "training"
     }
   ];
 
-  const openModal = (imageSrc: string) => {
+  const openModal = (imageSrc: string, imageData: any) => {
     setSelectedImage(imageSrc);
+    setSelectedImageData(imageData);
   };
 
   const closeModal = () => {
     setSelectedImage(null);
+    setSelectedImageData(null);
   };
 
   return (
@@ -95,52 +108,80 @@ const ImageGallery = () => {
           {galleryImages.map((image) => (
             <div 
               key={image.id}
-              className="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
-              onClick={() => openModal(image.src)}
+              className="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              {/* Image */}
-              <div className="aspect-w-4 aspect-h-3 bg-gradient-to-br from-green-200 via-gray-200 to-red-200">
-                <div className="w-full h-64 bg-gray-300 flex items-center justify-center text-gray-600">
-                  <div className="text-center">
-                    <div className="text-lg font-medium mb-2">{image.title}</div>
-                    <div className="text-sm text-gray-500">Click to view</div>
-                  </div>
-                </div>
+              {/* Real Image */}
+              <div className="aspect-w-4 aspect-h-3 overflow-hidden">
+                <img 
+                  src={image.src} 
+                  alt={image.title}
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <ZoomIn className="w-8 h-8 text-white" />
-                </div>
+              {/* Overlay with View Button */}
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                <button
+                  onClick={() => openModal(image.src, image)}
+                  className="opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold flex items-center space-x-2 hover:bg-gray-100 transform scale-90 group-hover:scale-100"
+                >
+                  <Eye className="w-5 h-5" />
+                  <span>View</span>
+                </button>
               </div>
 
               {/* Content */}
               <div className="p-4">
                 <h3 className="font-bold text-gray-900 mb-2">{image.title}</h3>
                 <p className="text-sm text-gray-600">{image.description}</p>
+                <div className="mt-3">
+                  <span className="inline-block px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">
+                    {image.category}
+                  </span>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Modal */}
-        {selectedImage && (
+        {/* Enhanced Modal */}
+        {selectedImage && selectedImageData && (
           <div 
-            className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
             onClick={closeModal}
           >
-            <div className="relative max-w-4xl max-h-full">
+            <div className="relative max-w-6xl max-h-full" onClick={(e) => e.stopPropagation()}>
               <button
                 onClick={closeModal}
-                className="absolute top-4 right-4 w-10 h-10 bg-white bg-opacity-20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-opacity-30 transition-all duration-200 z-10"
+                className="absolute top-4 right-4 w-12 h-12 bg-white bg-opacity-20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-opacity-30 transition-all duration-200 z-10"
               >
                 <X className="w-6 h-6" />
               </button>
-              <div className="w-full h-96 md:h-[600px] bg-gradient-to-br from-green-300 via-gray-300 to-red-300 rounded-lg flex items-center justify-center">
-                <div className="text-center text-gray-700">
-                  <div className="text-2xl font-bold mb-4">Preview Image</div>
-                  <div className="text-lg">This would show the actual image</div>
+              
+              {/* Image Container */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-2xl">
+                <img 
+                  src={selectedImage} 
+                  alt={selectedImageData.title}
+                  className="w-full h-96 md:h-[600px] object-cover"
+                />
+                
+                {/* Image Details */}
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    {selectedImageData.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    {selectedImageData.description}
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="inline-block px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
+                      {selectedImageData.category}
+                    </span>
+                    <button className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors">
+                      Book This Service
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
