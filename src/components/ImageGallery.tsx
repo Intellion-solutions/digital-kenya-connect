@@ -9,70 +9,70 @@ const ImageGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://i.pinimg.com/736x/60/9a/18/609a18f71e22e009879358829659c4e0.jpg",
       title: "High-Quality Document Printing",
       description: "Professional printing services for all your document needs",
       category: "printing"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", 
+      src: "https://i.pinimg.com/736x/27/5c/fa/275cfae092575a8c3419441a0fcc1483.jpg", 
       title: "Large Format Printing",
-      description: "Banners, posters, and large-scale printing solutions",
+      description: "Banners, T-shirts and large-scale printing solutions",
       category: "printing"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://i.pinimg.com/736x/34/66/1b/34661b2521176c600b2e807700637e0a.jpg",
       title: "Bulk Photocopying Services", 
       description: "Fast and efficient bulk copying for businesses and students",
       category: "printing"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://i.pinimg.com/736x/90/9d/a4/909da49a9878ca2888fede5fe5468586.jpg",
       title: "eCitizen Form Assistance",
       description: "Customers getting help with government online services",
       category: "ecitizen"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://i.pinimg.com/736x/d1/93/dc/d193dcaebd633a934e0ec6b8773eb1b5.jpg",
       title: "Scanning & Lamination",
       description: "Document scanning and professional lamination services",
       category: "printing"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://i.pinimg.com/736x/e1/2a/31/e12a313ae5262c8f8170a9a631e333b0.jpg",
       title: "Creative Design in Progress",
       description: "Professional graphic design and branding services",
       category: "design"
     },
     {
       id: 7,
-      src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://i.pinimg.com/736x/78/ee/c7/78eec7ba702529cf9bab472e17c19341.jpg",
       title: "Poster & Banner Production",
       description: "Custom poster and banner design and printing",
       category: "printing"
     },
     {
       id: 8,
-      src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://i.pinimg.com/736x/4a/af/ab/4aafabe4718808e2f254fee72325224f.jpg",
       title: "Student Typing Services",
       description: "Students working on assignments and projects",
       category: "training"
     },
     {
       id: 9,
-      src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://i.pinimg.com/736x/74/ee/72/74ee72b93217a851f7ebdf47b5016793.jpg",
       title: "Government Office Support",
       description: "Assistance with various government office procedures",
       category: "ecitizen"
     },
     {
       id: 10,
-      src: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://i.pinimg.com/736x/ab/62/2c/ab622c35f3451361637a5d2a49999907.jpg",
       title: "Personal Computer Assistance",
       description: "Staff helping customers with computer tasks and training",
       category: "training"

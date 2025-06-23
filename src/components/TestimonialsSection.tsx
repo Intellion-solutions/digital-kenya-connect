@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
       location: "Nakuru",
       rating: 5,
       text: "The staff here are angels! They helped me with my HELB application and even printed all my teaching materials. The 24/7 service is a lifesaver for busy people like me.",
-      image: "/lovable-uploads/testimonial-3.jpg",
+      image: "",
       service: "HELB Application & Printing"
     },
     {
@@ -43,7 +43,7 @@ const TestimonialsSection = () => {
       location: "Eldoret",
       rating: 5,
       text: "They wrote the most professional CV for me and helped me apply for jobs online. Within a month, I got three interviews! Their career guidance is exceptional.",
-      image: "/lovable-uploads/testimonial-4.jpg",
+      image: "",
       service: "CV Writing & Job Applications"
     },
     {
@@ -53,7 +53,7 @@ const TestimonialsSection = () => {
       location: "Kisumu",
       rating: 5,
       text: "Getting birth certificates for my children was so easy here. The staff understood my needs and helped me with everything. Very professional and caring service.",
-      image: "/lovable-uploads/testimonial-5.jpg",
+      image: "",
       service: "Birth Certificate Services"
     },
     {
@@ -63,7 +63,7 @@ const TestimonialsSection = () => {
       location: "Machakos",
       rating: 5,
       text: "From business registration to getting my KRA PIN, they handled everything. The one-stop solution saved me weeks of running around government offices.",
-      image: "/lovable-uploads/testimonial-6.jpg",
+      image: "",
       service: "Business Registration & KRA Services"
     }
   ];

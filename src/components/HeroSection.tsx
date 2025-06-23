@@ -12,7 +12,7 @@ const HeroSection = () => {
       title: "Complete eCitizen Services",
       subtitle: "Get all your government services done quickly and efficiently",
       description: "Birth certificates, ID cards, passports, driving licenses, and more - all under one roof",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      image: "https://rimeastafrica.org/wp-content/uploads/2017/06/ecitizen.png",
       cta: "Get eCitizen Help",
       link: "/contact?service=eCitizen Services"
     },
@@ -30,7 +30,7 @@ const HeroSection = () => {
       title: "Professional Printing & Design",
       subtitle: "High-quality printing services for all your needs",
       description: "From business cards to large format printing, posters, banners, and bulk copying",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      image: "https://www.tenaui.sa/wp-content/uploads/2024/02/Large-Format-Printing.webp",
       cta: "View Printing Services",
       link: "/contact?service=Printing Services"
     },
@@ -39,7 +39,7 @@ const HeroSection = () => {
       title: "Digital Skills & Training",
       subtitle: "Learn essential computer skills for the modern world",
       description: "Computer basics, Microsoft Office, internet usage, and digital literacy programs",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      image: "https://www.smartacademy.go.ke/choodrik/2024/03/Banner-1-1.jpg",
       cta: "Start Learning",
       link: "/contact?service=Computer Training"
     },
@@ -55,9 +55,9 @@ const HeroSection = () => {
     {
       id: 6,
       title: "Software Development Services",
-      subtitle: "Custom web and software solutions",
+      subtitle: "Custom websites, Web Apps & Information systems software solutions",
       description: "Professional web development, mobile apps, and custom software solutions for your business",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      image: "https://miro.medium.com/v2/resize:fit:14720/1*O0Hdjnu6jioFNut3Bix-NQ.jpeg",
       cta: "View Our Work",
       link: "/contact?service=Software Development"
     },
@@ -66,7 +66,7 @@ const HeroSection = () => {
       title: "Professional Consultancy",
       subtitle: "Expert guidance for your digital journey",
       description: "Get professional advice on technology, business processes, and digital transformation",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      image: "https://img.freepik.com/premium-photo/two-young-african-american-colleagues-formalwear-looking-through-data_274679-39908.jpg",
       cta: "Book Consultation",
       link: "/contact?service=Professional Consultancy"
     }
@@ -110,11 +110,11 @@ const HeroSection = () => {
             ></div>
             
             {/* Logo overlay on background with reduced opacity and size */}
-            <div className="absolute top-1/2 right-10 transform -translate-y-1/2 z-5 opacity-10">
+            <div className="absolute top-1/2 right-10 transform -translate-y-1/2 z-5 opacity-6">
               <img 
-                src="/lovable-uploads/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
-                alt="Mutunga Enterprise Ltd Background Logo" 
-                className="w-48 h-48 object-contain filter brightness-200"
+                src="/Assets/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
+                alt="Vincom Computer (K)  Enterprise Ltd" 
+                className="w-60 h-60 object-contain filter brightness-300"
               />
             </div>
           </div>
@@ -126,19 +126,19 @@ const HeroSection = () => {
         <div className="max-w-4xl">
           <div className="mb-6">
             <span className="inline-block px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-full mb-4">
-              🇰🇪 Proudly Serving Kenya
+              🇰🇪 Proudly Serving Kenya and Beyond
             </span>
             <div className="mb-4 flex items-center space-x-4">
               <div className="w-20 h-20 flex items-center justify-center bg-white bg-opacity-10 backdrop-blur-sm rounded-full">
                 <img 
-                  src="/lovable-uploads/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
-                  alt="Mutunga Enterprise Ltd Logo" 
+                  src="/Assets/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
+                  alt="Vincom Computers (K)Enterprise Ltd" 
                   className="w-16 h-16 object-contain"
                 />
               </div>
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Mutunga Enterprise Ltd
+                  Vincom Computers Enterprise Ltd
                 </h2>
                 <p className="text-green-300 text-lg">Your Trusted Digital Gateway</p>
               </div>

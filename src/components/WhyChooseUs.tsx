@@ -60,7 +60,7 @@ const WhyChooseUs = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Why Choose Kenya Cyber?
+            Why Choose Vincom Computer (k) Enterprise?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We're more than just a cyber café - we're your trusted partner for all digital services. 

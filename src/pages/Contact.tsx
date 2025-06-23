@@ -98,9 +98,10 @@ const Contact = () => {
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">Visit Our Center</h3>
                       <p className="text-gray-600">
-                        Mutunga Enterprise Digital Center<br />
-                        Main Street, Nairobi<br />
-                        Kenya
+                        VINCOM COMPUTER (K) ENTERPRISE<br />
+                        Sindo town, Homabay County<br />
+                        P.O Box 14-40308,
+                        Sindo.
                       </p>
                     </div>
                   </div>
@@ -130,7 +131,7 @@ const Contact = () => {
                           onClick={handleEmailContact}
                           className="hover:text-blue-600 transition-colors cursor-pointer"
                         >
-                          mutuvince@gmail.com
+                          info@vincomcomputerenterprise.co.ke
                         </button>
                       </p>
                     </div>
@@ -291,7 +292,9 @@ const Contact = () => {
                           className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200"
                         >
                           <option value="normal">Normal</option>
+                          <option value="normal">High Priority</option>
                           <option value="urgent">Urgent</option>
+                          <option value="normal">Critical</option>
                           <option value="emergency">Emergency</option>
                         </select>
                       </div>
@@ -332,11 +335,15 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Find Us Here</h2>
           <div className="bg-gradient-to-br from-green-200 via-gray-200 to-red-200 h-96 rounded-2xl flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="w-16 h-16 text-gray-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">Interactive Map</h3>
-              <p className="text-gray-600">Mutunga Enterprise Digital Center Location</p>
-            </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.660219609455!2d34.1653058!3d-0.4612339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18299b3ddf999c35%3A0x2fc04b65236970e1!2sSindo!5e0!3m2!1sen!2ske!4v1718702450000!5m2!1sen!2ske"
+                  className="w-full h-full border-0"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+
+            
           </div>
         </div>
       </section>

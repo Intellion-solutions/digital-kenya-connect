@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import React, { useState } from 'react';
 import Header from '../components/Header';
@@ -21,140 +22,140 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "/lovable-uploads/printing-service-1.jpg",
+      src: "https://i.pinimg.com/736x/7d/f7/14/7df7140ccf1e34fe9f5e5f8d1f41c495.jpg",
       title: "High-Quality Document Printing",
       description: "Professional printing services for all your document needs",
       category: "printing"
     },
     {
       id: 2,
-      src: "/lovable-uploads/large-format-printer.jpg", 
+      src: "https://i.pinimg.com/736x/c8/de/0c/c8de0cc91bc4f5d45f5c7f69d6671391.jpg", 
       title: "Large Format Printing",
       description: "Banners, posters, and large-scale printing solutions",
       category: "printing"
     },
     {
       id: 3,
-      src: "/lovable-uploads/bulk-photocopying.jpg",
+      src: "https://i.pinimg.com/736x/8b/4c/71/8b4c71200d684b57eb2e69d25866104d.jpg",
       title: "Bulk Photocopying Services", 
       description: "Fast and efficient bulk copying for businesses and students",
       category: "printing"
     },
     {
       id: 4,
-      src: "/lovable-uploads/ecitizen-assistance.jpg",
+      src: "https://i.pinimg.com/736x/90/9d/a4/909da49a9878ca2888fede5fe5468586.jpg",
       title: "eCitizen Form Assistance",
       description: "Customers getting help with government online services",
       category: "ecitizen"
     },
     {
       id: 5,
-      src: "/lovable-uploads/scanning-lamination.jpg",
+      src: "https://i.pinimg.com/736x/69/5f/6f/695f6f560d705f1c4d2faf02fc59c977.jpg",
       title: "Scanning & Lamination",
       description: "Document scanning and professional lamination services",
       category: "printing"
     },
     {
       id: 6,
-      src: "/lovable-uploads/creative-design-work.jpg",
+      src: "https://i.pinimg.com/736x/f2/40/5b/f2405b87c8e41bfe64cf80312576d523.jpg",
       title: "Creative Design in Progress",
       description: "Professional graphic design and branding services",
       category: "office"
     },
     {
       id: 7,
-      src: "/lovable-uploads/poster-banner-production.jpg",
+      src: "https://i.pinimg.com/736x/34/cb/6e/34cb6ee4d0ae22b591c2df5ee67c7ec3.jpg",
       title: "Poster & Banner Production",
       description: "Custom poster and banner design and printing",
       category: "printing"
     },
     {
       id: 8,
-      src: "/lovable-uploads/students-typing.jpg",
+      src: "https://i.pinimg.com/736x/fa/cd/57/facd57dbefed9ef0f27690ba5d4c521a.jpg",
       title: "Student Typing Services",
       description: "Students working on assignments and projects",
       category: "training"
     },
     {
       id: 9,
-      src: "/lovable-uploads/government-offices.jpg",
+      src: "https://i.pinimg.com/736x/f8/ff/2b/f8ff2b262e4bb46bdfbad821613841cd.jpg",
       title: "Government Office Support",
       description: "Assistance with various government office procedures",
       category: "ecitizen"
     },
     {
       id: 10,
-      src: "/lovable-uploads/customer-computer-help.jpg",
+      src: "https://i.pinimg.com/736x/df/91/4e/df914e0a1d89bd09408b57463bea2fe6.jpg",
       title: "Personal Computer Assistance",
       description: "Staff helping customers with computer tasks and training",
       category: "training"
     },
     {
       id: 11,
-      src: "/lovable-uploads/business-card-printing.jpg",
+      src: "https://i.pinimg.com/736x/67/66/81/676681ec1bc06dfeb3d76261a73d50af.jpg",
       title: "Business Card Printing",
       description: "Professional business cards with quality printing",
       category: "printing"
     },
     {
       id: 12,
-      src: "/lovable-uploads/passport-photo-service.jpg",
+      src: "https://i.pinimg.com/736x/38/b2/43/38b2434d83d052629900f2ed12351cb4.jpg",
       title: "Passport Photo Services",
       description: "Professional passport and ID photos taken on-site",
       category: "ecitizen"
     },
     {
       id: 13,
-      src: "/lovable-uploads/computer-training-class.jpg",
+      src: "https://i.pinimg.com/736x/fa/cd/57/facd57dbefed9ef0f27690ba5d4c521a.jpg",
       title: "Computer Training Class",
       description: "Group training sessions for digital literacy",
       category: "training"
     },
     {
       id: 14,
-      src: "/lovable-uploads/office-environment.jpg",
+      src: "https://i.pinimg.com/736x/7a/36/5b/7a365b6154aafb0c9b45d51ea9f83c07.jpg",
       title: "Modern Office Environment",
       description: "Clean and professional workspace for all customers",
       category: "facility"
     },
     {
       id: 15,
-      src: "/lovable-uploads/digital-services-counter.jpg",
-      title: "Digital Services Counter",
+      src: "https://i.pinimg.com/736x/fe/b3/c6/feb3c651a54034998584ea0b71e2f060.jpg",
+      title: "Fleet Management",
       description: "Dedicated service counters for different needs",
-      category: "facility"
+      category: "Fleet"
     },
     {
       id: 16,
-      src: "/lovable-uploads/cv-writing-session.jpg",
-      title: "CV Writing Session",
+      src: "https://i.pinimg.com/736x/8f/bf/a9/8fbfa90d55b7d830220c89be428ac157.jpg",
+      title: "Building and construction",
       description: "Professional CV and resume writing assistance",
-      category: "office"
+      category: "Building"
     },
     {
       id: 17,
-      src: "/lovable-uploads/microsoft-office-training.jpg",
+      src: "https://i.pinimg.com/736x/33/49/c8/3349c88048230b08c3ebe89ffdbe376c.jpg",
       title: "Microsoft Office Training",
       description: "Learning Word, Excel, and PowerPoint applications",
       category: "training"
     },
     {
       id: 18,
-      src: "/lovable-uploads/id-application-help.jpg",
-      title: "ID Application Assistance",
+      src: "https://i.pinimg.com/736x/e5/0e/8b/e50e8b6208600fbd9cb798b9317a8901.jpg",
+      title: "Business Consultancy services",
       description: "Helping customers with national ID applications",
-      category: "ecitizen"
+      category: "office"
     },
     {
       id: 19,
-      src: "/lovable-uploads/business-consultation.jpg",
+      src: "https://i.pinimg.com/736x/88/fb/d5/88fbd57f6e87b4a008f7e6671e1d44c8.jpg",
       title: "Business Consultation",
       description: "Professional business advice and planning sessions",
       category: "office"
     },
     {
       id: 20,
-      src: "/lovable-uploads/internet-browsing-assistance.jpg",
+      src: "https://i.pinimg.com/736x/ea/f7/15/eaf71559bb15eacb3be429046839f029.jpg",
       title: "Internet Browsing Assistance",
       description: "Teaching customers how to navigate the internet safely",
       category: "training"
@@ -176,7 +177,7 @@ const Gallery = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-600 via-black to-red-600 text-white py-20">
         <div className="container mx-auto px-4 text-center">
@@ -196,31 +197,18 @@ const Gallery = () => {
           <div className="max-w-4xl mx-auto">
             <Carousel className="w-full">
               <CarouselContent>
-                {galleryImages.slice(0, 8).map((image) => (
+                {galleryImages.slice(0, 8).map((image: any) => (
                   <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3">
                     <div className="p-2">
-                      <div 
-                        className="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
-                        onClick={() => openModal(image.src)}
-                      >
-                        {/* Image */}
-                        <div className="aspect-w-4 aspect-h-3 bg-gradient-to-br from-green-200 via-gray-200 to-red-200">
-                          <div className="w-full h-64 bg-gray-300 flex items-center justify-center text-gray-600">
-                            <div className="text-center">
-                              <div className="text-lg font-medium mb-2">{image.title}</div>
-                              <div className="text-sm text-gray-500">Click to view</div>
-                            </div>
-                          </div>
+                      <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300">
+                        <div className="aspect-[4/3] bg-gray-100">
+                          <img
+                            src={image.src}
+                            alt={image.title}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                          />
                         </div>
-
-                        {/* Overlay */}
-                        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                          <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <ZoomIn className="w-8 h-8 text-white" />
-                          </div>
-                        </div>
-
-                        {/* Content */}
                         <div className="p-4">
                           <h3 className="font-bold text-gray-900 mb-2">{image.title}</h3>
                           <p className="text-sm text-gray-600">{image.description}</p>
@@ -244,9 +232,9 @@ const Gallery = () => {
             <Filter className="w-6 h-6 text-gray-600 mr-3" />
             <h3 className="text-xl font-bold text-gray-900">Filter by Category</h3>
           </div>
-          
+
           <div className="flex flex-wrap justify-center gap-4">
-            {categories.map((category) => (
+            {categories.map((category: any) => (
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
@@ -267,13 +255,11 @@ const Gallery = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredImages.map((image) => (
-              <div 
+            {filteredImages.map((image: any) => (
+              <div
                 key={image.id}
-                className="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer animate-fade-in"
-                onClick={() => openModal(image.src)}
+                className="relative bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 animate-fade-in"
               >
-                {/* Category Badge */}
                 <div className="absolute top-3 left-3 z-10">
                   <span className={`px-2 py-1 text-xs font-medium rounded-full ${
                     image.category === 'printing' ? 'bg-blue-500 text-white' :
@@ -282,28 +268,17 @@ const Gallery = () => {
                     image.category === 'office' ? 'bg-purple-500 text-white' :
                     'bg-gray-500 text-white'
                   }`}>
-                    {categories.find(cat => cat.id === image.category)?.name || 'Other'}
+                    {categories.find((cat: any) => cat.id === image.category)?.name || 'Other'}
                   </span>
                 </div>
-
-                {/* Image */}
-                <div className="aspect-w-4 aspect-h-3 bg-gradient-to-br from-green-200 via-gray-200 to-red-200">
-                  <div className="w-full h-64 bg-gray-300 flex items-center justify-center text-gray-600">
-                    <div className="text-center">
-                      <div className="text-lg font-medium mb-2">{image.title}</div>
-                      <div className="text-sm text-gray-500">Click to view</div>
-                    </div>
-                  </div>
+                <div className="aspect-[4/3] bg-gray-100">
+                  <img
+                    src={image.src}
+                    alt={image.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
-
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <ZoomIn className="w-8 h-8 text-white" />
-                  </div>
-                </div>
-
-                {/* Content */}
                 <div className="p-4">
                   <h3 className="font-bold text-gray-900 mb-2">{image.title}</h3>
                   <p className="text-sm text-gray-600">{image.description}</p>
@@ -313,29 +288,6 @@ const Gallery = () => {
           </div>
         </div>
       </section>
-
-      {/* Modal */}
-      {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4"
-          onClick={closeModal}
-        >
-          <div className="relative max-w-4xl max-h-full">
-            <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 w-10 h-10 bg-white bg-opacity-20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-opacity-30 transition-all duration-200 z-10"
-            >
-              <X className="w-6 h-6" />
-            </button>
-            <div className="w-full h-96 md:h-[600px] bg-gradient-to-br from-green-300 via-gray-300 to-red-300 rounded-lg flex items-center justify-center">
-              <div className="text-center text-gray-700">
-                <div className="text-2xl font-bold mb-4">Preview Image</div>
-                <div className="text-lg">This would show the actual image</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* CTA Section */}
       <section className="py-20 bg-white">

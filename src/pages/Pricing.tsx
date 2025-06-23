@@ -11,12 +11,14 @@ const Pricing = () => {
       description: "Government document processing fees",
       color: "from-green-500 to-green-600",
       services: [
-        { name: "Birth Certificate", price: "From KSh 150", note: "Processing fee + government charges" },
+        { name: "Birth Certificate", price: "From KSh 30", note: "government Birth forms" },
         { name: "ID Card Application", price: "From KSh 200", note: "Assistance + application fee" },
-        { name: "Passport Services", price: "From KSh 500", note: "Form filling + guidance" },
-        { name: "Good Conduct Certificate", price: "From KSh 300", note: "Complete application process" },
-        { name: "KRA PIN Application", price: "KSh 100", note: "Quick registration" },
-        { name: "NHIF Registration", price: "KSh 150", note: "Full setup assistance" }
+        { name: "Passport Services", price: "From KSh 700", note: "Form filling + guidance" },
+        { name: "Good Conduct Cert.", price: "From KSh 200", note: "Complete application process" },
+        { name: "KRA PIN Application", price: "KSh 200", note: "Quick registration" },
+        { name: "KRA Services", price: "KSh 200", note: "Filing returns + Other services" },
+        { name: "NHIF Registration", price: "KSh 150", note: "Full setup assistance" },
+        { name: "NTSA Services", price: "KSh 200", note: "Log book trasnfers + Other services" }
       ]
     },
     {
@@ -26,10 +28,12 @@ const Pricing = () => {
       services: [
         { name: "Black & White Printing", price: "KSh 5 per page", note: "A4 size, bulk discounts available" },
         { name: "Color Printing", price: "KSh 20 per page", note: "High quality, various sizes" },
-        { name: "Business Cards", price: "From KSh 500", note: "Design + printing (100 cards)" },
+        { name: "Business Cards", price: "From KSh 500", note: "Design + printing (50 cards)" },
+        { name: "Euology & Wedding Cards", price: "From KSh 500", note: "Design + printing (25 cards)" },
         { name: "Flyers & Brochures", price: "From KSh 30 each", note: "Professional design available" },
-        { name: "Posters (A3)", price: "From KSh 150", note: "Various sizes available" },
-        { name: "Banner Printing", price: "From KSh 80/sq ft", note: "Weather resistant materials" }
+        { name: "Posters (A3)", price: "From KSh 30", note: "Various sizes available" },
+        { name: "Banner Printing", price: "From KSh 1000/msq ft", note: "Weather resistant materials" },
+        { name: "PVC + hard printings", price: "From Ksh 50", note: "School IDs & Business cards" }
       ]
     },
     {
@@ -37,10 +41,12 @@ const Pricing = () => {
       description: "Professional business support and consultancy",
       color: "from-purple-500 to-purple-600",
       services: [
-        { name: "CV Writing", price: "From KSh 800", note: "Professional formatting + review" },
+        { name: "CV Writing", price: "From KSh 150", note: "Professional formatting + review" },
         { name: "Business Plan", price: "From KSh 5,000", note: "Comprehensive business planning" },
-        { name: "Logo Design", price: "From KSh 2,000", note: "Original design + revisions" },
+        { name: "Logo Design", price: "From KSh 1,000", note: "Original design + revisions" },
         { name: "Business Registration", price: "From KSh 1,500", note: "Complete registration process" },
+        { name: "Business Consulation services", price: "From KSh 1,000", note: "Professional Consulation" },
+        { name: "Web & System Design", price: "From KSh 11,000", note: "Professional websites & apps etc" },
         { name: "Tax Consultation", price: "From KSh 1,000", note: "Professional tax advice" },
         { name: "Legal Documents", price: "From KSh 500", note: "Contracts, agreements, etc." }
       ]
@@ -50,12 +56,12 @@ const Pricing = () => {
       description: "Digital literacy and skills development",
       color: "from-orange-500 to-orange-600",
       services: [
-        { name: "Basic Computer Skills", price: "KSh 3,000/month", note: "4 weeks comprehensive course" },
-        { name: "Microsoft Office", price: "KSh 4,000/month", note: "Word, Excel, PowerPoint" },
-        { name: "Internet & Email", price: "KSh 2,000/month", note: "Digital communication skills" },
-        { name: "Graphic Design Course", price: "KSh 8,000/month", note: "Professional design tools" },
-        { name: "Web Design Basics", price: "KSh 10,000/month", note: "HTML, CSS fundamentals" },
-        { name: "Digital Marketing", price: "KSh 6,000/month", note: "Social media & online marketing" }
+        { name: "Basic Computer Skills", price: "KSh 3,000/month", note: "5+ weeks comprehensive course" },
+        { name: "Microsoft Office", price: "From KSh 4,000", note: "Word, Excel, PowerPoint, Access" },
+        { name: "Internet & Email", price: "From KSh 2,000", note: "Digital communication skills" },
+        { name: "Graphic Design Course", price: "From KSh 8,000", note: "Professional design tools" },
+        { name: "Web Design Basics", price: "From KSh 10,000/month", note: "HTML, CSS fundamentals" },
+        { name: "Digital Marketing", price: "From KSh 6,000/month", note: "online marketing & Others" }
       ]
     },
     {
@@ -63,10 +69,10 @@ const Pricing = () => {
       description: "Transportation and building solutions",
       color: "from-red-500 to-red-600",
       services: [
-        { name: "Bus Ticket Booking", price: "Service fee KSh 50", note: "All major routes available" },
-        { name: "Car Rental Booking", price: "From KSh 200/day", note: "Booking assistance fee" },
+        { name: "Bus Ticket Booking", price: "Service fee KSh 150", note: "Long hours travels" },
+        { name: "Car Rental Booking", price: "Negotiable", note: "Based on some factors" },
         { name: "Building Plan Review", price: "From KSh 3,000", note: "Professional architectural review" },
-        { name: "Construction Consultation", price: "From KSh 2,000/hour", note: "Expert advice & planning" },
+        { name: "Construction Consultation", price: "From KSh 1,500/hour", note: "Expert advice & planning" },
         { name: "Project Management", price: "Negotiable", note: "Based on project scope" },
         { name: "Material Sourcing", price: "Commission based", note: "Best prices guaranteed" }
       ]
@@ -76,11 +82,11 @@ const Pricing = () => {
       description: "Additional digital and office support",
       color: "from-teal-500 to-teal-600",
       services: [
-        { name: "Data Entry", price: "From KSh 5/entry", note: "Accurate & fast typing" },
-        { name: "Document Scanning", price: "KSh 10/page", note: "High resolution scans" },
+        { name: "Data Entry", price: "From KSh 50", note: "Accurate & fast typing" },
+        { name: "Document Scanning", price: "From KSh 30/page", note: "High resolution scans" },
         { name: "Lamination", price: "From KSh 30", note: "Various sizes available" },
         { name: "Photocopying", price: "KSh 5/page", note: "Clear & professional copies" },
-        { name: "Internet Access", price: "KSh 50/hour", note: "High-speed connection" },
+        { name: "Internet Access", price: "KSh 60/hour", note: "High-speed connection" },
         { name: "Computer Usage", price: "KSh 80/hour", note: "Modern computers available" }
       ]
     }
@@ -89,11 +95,13 @@ const Pricing = () => {
   const packageDeals = [
     {
       title: "Student Package",
-      price: "KSh 2,000/month",
+      price: "From KSh 4,000",
       description: "Perfect for students and researchers",
       features: [
-        "20 hours computer access",
-        "100 pages free printing",
+        "100+ hours computer access",
+        "30+ pages free printing",
+        "Computer packages",
+        "Internet Access",
         "Document typing assistance",
         "Email & internet training",
         "Assignment formatting",
@@ -103,15 +111,15 @@ const Pricing = () => {
     },
     {
       title: "Business Starter",
-      price: "KSh 5,000/month",
+      price: "Negotiable",
       description: "Everything you need to start your business",
       features: [
         "Business registration assistance",
         "Logo design & branding",
         "500 business cards",
         "Letterhead design",
-        "Basic website setup",
-        "Social media setup"
+        "Professional Research",
+        "Basic website setup"
       ],
       highlight: true
     },
@@ -122,6 +130,7 @@ const Pricing = () => {
       features: [
         "Bulk printing discounts",
         "Dedicated account manager",
+        "Web App & Information systems",
         "Priority service",
         "Custom training programs",
         "Fleet booking management",

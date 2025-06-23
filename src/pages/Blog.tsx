@@ -1,7 +1,5 @@
 
 import React, { useState, useMemo } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { Calendar, User, Clock, Search, Filter, BookOpen, ArrowRight, Tag, Eye } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -19,7 +17,7 @@ const Blog = () => {
       author: "Vincent Mutunga",
       date: "2024-01-15",
       category: "Government Services",
-      tags: ["eCitizen", "Government", "Digital Services"],
+      tags: ["#eCitizen", "#Government", "#Digital Services"],
       readTime: "8 min read",
       views: 2450,
       featured: true,
@@ -33,7 +31,7 @@ const Blog = () => {
       author: "Sarah Wanjiku",
       date: "2024-01-12",
       category: "Technology",
-      tags: ["Digital Skills", "Training", "Career"],
+      tags: ["#Digital Skills", "#Training", "#Career"],
       readTime: "6 min read",
       views: 1890,
       featured: false,
@@ -47,7 +45,7 @@ const Blog = () => {
       author: "David Kimani",
       date: "2024-01-10",
       category: "Business",
-      tags: ["Business Registration", "Entrepreneurship", "Legal"],
+      tags: ["#Business Registration", "#Entrepreneurship", "#Legal"],
       readTime: "10 min read",
       views: 3200,
       featured: true,
@@ -61,7 +59,7 @@ const Blog = () => {
       author: "Grace Akinyi",
       date: "2024-01-08",
       category: "Career",
-      tags: ["CV Writing", "Job Search", "Career Tips"],
+      tags: ["#CV Writing", "#Job Search", "#Career Tips"],
       readTime: "7 min read",
       views: 1650,
       featured: false,
@@ -75,11 +73,11 @@ const Blog = () => {
       author: "Vincent Mutunga",
       date: "2024-01-05",
       category: "Technology",
-      tags: ["Web Development", "Programming", "Business"],
+      tags: ["#Web Development", "#Programming", "#Business"],
       readTime: "9 min read",
       views: 2100,
       featured: false,
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201026224623/Top-10-Web-Development-Trends-for-2020.png"
     },
     {
       id: 6,
@@ -89,11 +87,11 @@ const Blog = () => {
       author: "Sarah Wanjiku",
       date: "2024-01-03",
       category: "Business",
-      tags: ["Printing", "Small Business", "Marketing"],
+      tags: ["#Printing", "#Small Business", "Marketing"],
       readTime: "5 min read",
       views: 980,
       featured: false,
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://media.licdn.com/dms/image/v2/D4E12AQEtPdDggc548g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1693392953208?e=2147483647&v=beta&t=a32PlXkmTSpPojV13xt2qHLhgaZb-sAR8CENVcTby2M"
     }
   ];
 
@@ -134,12 +132,12 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+    
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 via-black to-red-600 text-white py-20">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+      <section className="bg-gradient-to-r from-green-600 via-black to-red-600 text-white py-3">
+        <div className="container mx-auto px-3 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
             Our Blog
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in">
@@ -149,13 +147,13 @@ const Blog = () => {
             <BookOpen className="w-6 h-6" />
             <span>{blogPosts.length} Articles</span>
             <span>•</span>
-            <span>Updated Daily</span>
+            <span>Updated Frequently</span>
           </div>
         </div>
       </section>
 
       {/* Search and Filter Section */}
-      <section className="py-12 bg-white shadow-sm">
+      <section className="py-10 bg-white shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-6 items-center justify-between">
             {/* Search */}
@@ -361,7 +359,7 @@ const Blog = () => {
         </div>
       </section>
 
-      <Footer />
+    
     </div>
   );
 };

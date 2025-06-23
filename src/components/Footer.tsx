@@ -40,14 +40,16 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
-                  src="/lovable-uploads/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
+                  src="/Assets/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
                   alt="Mutunga Enterprise Ltd Logo" 
                   className="w-full h-full object-contain"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Mutunga Enterprise Ltd</h3>
+                <h3 className="text-xl font-bold">Vincom Computers (K)</h3>
                 <p className="text-gray-400 text-sm">Your Digital Gateway</p>
+                <p className="text-gray-400 text-sm">P.O Box 14-40308,</p>
+                <p className="text-gray-400 text-sm">Sindo.</p>
               </div>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
@@ -114,9 +116,9 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-400">
-                    Mutunga Enterprise Ltd<br />
-                    Main Street, Nairobi<br />
-                    Kenya
+                    VINCOM COMPUTER (K) ENTERPRISE<br />
+                    P.O Box 14-40308,<br />
+                    Sindo.
                   </p>
                 </div>
               </div>
@@ -131,7 +133,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-green-500 flex-shrink-0" />
                 <a href="mailto:mutuvince@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
-                  mutuvince@gmail.com
+                  info@vincomcomputerenterprise.co.ke
                 </a>
               </div>
               
@@ -167,7 +169,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
               <p className="text-gray-400 text-sm">
-                © 2024 Mutunga Enterprise Ltd. All rights reserved.
+                © 2025 Vincom Computers (K) Enterprise Ltd. All rights reserved.
               </p>
               <a 
                 href="https://wa.me/254710245118"
@@ -175,7 +177,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white text-sm transition-colors duration-200 flex items-center space-x-1"
               >
-                <span>Website built and powered by</span>
+                <span>Website powered by</span>
                 <span className="font-semibold text-green-400">Intellion Ltd</span>
               </a>
             </div>

@@ -1,17 +1,16 @@
-
 import React from 'react';
-import { MapPin, Navigation, Clock, Phone } from 'lucide-react';
+import { MapPin, Navigation, Clock, Phone, FileDown } from 'lucide-react';
 
 const LocationMap = () => {
   const businessLocation = {
-    latitude: -0.4593609250568846,
-    longitude: 34.16816707445387,
-    address: "Main Street, Nairobi, Kenya",
-    name: "Mutunga Enterprise Ltd"
+    latitude: -0.5386960,
+    longitude: 34.16812,
+    address: "Sindo, Homabay-Kenya",
+    name: "VINCOM COMPUTER (K) ENTERPRISE"
   };
 
   const handleDirections = () => {
-    const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${businessLocation.latitude},${businessLocation.longitude}`;
+    const googleMapsUrl = `https://maps.app.goo.gl/2ZF41sQofDcfx4T19`;
     window.open(googleMapsUrl, '_blank');
   };
 
@@ -30,12 +29,12 @@ const LocationMap = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Location Info */}
           <div className="space-y-8">
             <div className="bg-gradient-to-br from-green-50 to-red-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Location</h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
@@ -91,26 +90,28 @@ const LocationMap = () => {
               </div>
             </div>
           </div>
-
-          {/* Map Placeholder */}
-          <div className="bg-gradient-to-br from-green-200 via-gray-200 to-red-200 h-96 rounded-2xl flex items-center justify-center relative overflow-hidden">
-            <div className="text-center text-gray-700 z-10">
-              <MapPin className="w-16 h-16 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-2">Interactive Map</h3>
-              <p className="text-lg">{businessLocation.name}</p>
-              <p className="text-sm text-gray-600 mt-2">{businessLocation.address}</p>
-              <button
-                onClick={handleOpenMaps}
-                className="mt-4 bg-white text-gray-800 px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200 shadow-lg"
-              >
-                Open in Google Maps
-              </button>
+          
+          
+          {/* PDF Viewer and Download */}
+          <div className="bg-white h-full rounded-2xl p-5">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Student Course Preview</h3>
+            <div className="w-full h-[700px] rounded-lg overflow-hidden shadow-md">
+              <iframe
+                src="/Course/Vincom Studies School.pdf"
+                title="Student Course Preview"
+                className="w-full h-full border-none rounded-lg"
+              />
             </div>
-            
-            {/* Decorative elements */}
-            <div className="absolute top-4 left-4 w-8 h-8 bg-green-500 rounded-full opacity-30"></div>
-            <div className="absolute bottom-4 right-4 w-12 h-12 bg-red-500 rounded-full opacity-20"></div>
-            <div className="absolute top-1/2 left-1/4 w-6 h-6 bg-black rounded-full opacity-25"></div>
+            <div className="mt-6 text-center">
+              <a
+                href="/Vincom Studies School.pdf"
+                download
+                className="inline-flex items-center justify-center px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition"
+              >
+                <FileDown className="w-5 h-5 mr-2" />
+                Download PDF
+              </a>
+            </div>
           </div>
         </div>
 
@@ -121,7 +122,7 @@ const LocationMap = () => {
               <MapPin className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Easy to Find</h3>
-            <p className="text-gray-600">Located in the heart of Nairobi with excellent public transport access</p>
+            <p className="text-gray-600">Located along the Suba towns with excellent public transport access and internet coverage</p>
           </div>
 
           <div className="text-center p-6 bg-gray-50 rounded-xl">

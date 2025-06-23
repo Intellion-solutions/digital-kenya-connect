@@ -19,9 +19,9 @@ const AboutSection = () => {
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: "6+ Years Experience",
-      description: "Established excellence since 2018",
-      stat: "6+ Years"
+      title: "10+ Years Experience",
+      description: "Established excellence since 2012",
+      stat: "10+ Years"
     }
   ];
 
@@ -66,13 +66,13 @@ const AboutSection = () => {
           {/* Content */}
           <div className="animate-fade-in">
             <span className="inline-block px-4 py-2 bg-green-100 text-green-600 text-sm font-medium rounded-full mb-4">
-              About Mutunga Enterprise Ltd
+              About Vincom Computer (K) Enterprise
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Your Trusted Digital Gateway
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Since 2018, Mutunga Enterprise Ltd has been at the forefront of Kenya's digital transformation. 
+              Since 2012, Mutunga Enterprise Ltd has been at the forefront of Kenya's digital transformation. 
               What started as a vision to bridge the digital divide has evolved into a comprehensive digital 
               service center serving thousands of customers nationwide.
             </p>

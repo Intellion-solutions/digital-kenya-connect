@@ -8,8 +8,8 @@ const ContactPreview = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Visit Our Center",
-      info: "Main Street, Nairobi, Kenya",
-      details: "Coordinates: -0.4594, 34.1682",
+      info: "P.O Box 14-40308,",
+      details: "Sindo.       Kenya",
       color: "bg-green-500"
     },
     {
@@ -22,7 +22,7 @@ const ContactPreview = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      info: "mutuvince@gmail.com",
+      info: "info@vincomcomputerenterprise.co.ke",
       details: "Quick Response Guaranteed",
       color: "bg-blue-500"
     },
@@ -46,7 +46,7 @@ const ContactPreview = () => {
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("https://maps.app.goo.gl/oxHx15d2T7ShwR6c6")`,
         }}></div>
       </div>
 
@@ -127,16 +127,19 @@ const ContactPreview = () => {
 
             {/* Location Preview */}
             <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
-              <h3 className="text-xl font-bold mb-4">Our Location</h3>
-              <div className="bg-gradient-to-br from-green-200 via-gray-200 to-red-200 h-48 rounded-lg flex items-center justify-center">
-                <div className="text-center text-gray-700">
-                  <MapPin className="w-12 h-12 mx-auto mb-3" />
-                  <p className="font-semibold">Mutunga Enterprise Ltd</p>
-                  <p className="text-sm">Main Street, Nairobi</p>
-                  <p className="text-xs text-gray-600">-0.4594, 34.1682</p>
-                </div>
+              <h3 className="text-xl font-bold mb-4 text-white">Our Location</h3>
+
+              <div className="w-full h-48 rounded-lg overflow-hidden shadow-md border border-gray-200">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.660219609455!2d34.1653058!3d-0.4612339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18299b3ddf999c35%3A0x2fc04b65236970e1!2sSindo!5e0!3m2!1sen!2ske!4v1718702450000!5m2!1sen!2ske"
+                  className="w-full h-full border-0"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
+
           </div>
         </div>
       </div>

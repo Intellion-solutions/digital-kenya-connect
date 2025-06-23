@@ -10,7 +10,6 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import ContactPreview from '../components/ContactPreview';
 import LocationMap from '../components/LocationMap';
 import Footer from '../components/Footer';
-
 const Index = () => {
   return (
     <div className="min-h-screen">
@@ -18,6 +17,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <ServicesOverview />
+        
         <WhyChooseUs />
         <AboutSection />
         <ImageGallery />

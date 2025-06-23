@@ -24,10 +24,10 @@ const Header = () => {
         'Custom IT Services'
       ]
     },
-    { name: 'Pricing', path: '/pricing' },
+    { name: 'Portfolio', path: '/portfolio' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'About', path: '/about' },
-    { name: 'Blog', path: '/blog' },
+    { name: 'Pricing', path: '/pricing' },
     { name: 'Contact', path: '/contact' }
   ];
 
@@ -43,7 +43,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4" />
-              <span>mutuvince@gmail.com</span>
+              <span>info@vincomcomputerenterprise.co.ke</span>
             </div>
           </div>
           <div className="text-sm font-medium">
@@ -59,14 +59,16 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-4">
             <div className="w-20 h-20 flex items-center justify-center">
               <img 
-                src="/lovable-uploads/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
-                alt="Mutunga Enterprise Ltd Logo" 
+                src="/Assets/dfdb6b94-9976-4ca2-85da-47f0aa5d2551.png" 
+                alt="Vincom Computer Enterprise" 
                 className="w-full h-full object-contain"
               />
             </div>
             <div>
-              <h1 className="text-2xl font-black text-gray-900">Mutunga Enterprise Ltd</h1>
+              <h1 className="text-2xl font-black text-gray-900">VINCOM COMPUTER (K) ENTERPRISE</h1>
               <p className="text-sm text-gray-600 font-medium">Your Digital Gateway</p>
+              <p className="text-sm text-gray-600 font-medium">P.O Box 14-40308,</p>
+              <p className="text-sm text-gray-600 font-medium">Sindo.</p>
             </div>
           </Link>
 
@@ -107,14 +109,7 @@ const Header = () => {
 
           {/* Search & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <div className="relative">
-              <Search className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-              <input 
-                type="text" 
-                placeholder="Search services..."
-                className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-              />
-            </div>
+
             <Link 
               to="/contact"
               className="bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors duration-200"

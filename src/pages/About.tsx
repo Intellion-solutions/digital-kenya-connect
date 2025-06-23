@@ -30,27 +30,27 @@ const About = () => {
 
   const milestones = [
     {
-      year: "2018",
+      year: "2012",
       title: "Foundation",
       description: "Mutunga Enterprise Ltd was established to bridge the digital divide in Kenya."
     },
     {
-      year: "2019",
+      year: "2015",
       title: "First 1000 Customers",
       description: "Reached our first milestone of serving 1000 satisfied customers."
     },
     {
-      year: "2020",
+      year: "2016",
       title: "Digital Expansion",
       description: "Expanded our services to include comprehensive eCitizen assistance."
     },
     {
-      year: "2021",
+      year: "2017",
       title: "24/7 Operations",
       description: "Became the first digital center in our area to operate round the clock."
     },
     {
-      year: "2022",
+      year: "2018",
       title: "Training Programs",
       description: "Launched professional computer training and digital literacy programs."
     },
@@ -58,11 +58,6 @@ const About = () => {
       year: "2023",
       title: "5000+ Customers",
       description: "Celebrated serving over 5000 customers across all our services."
-    },
-    {
-      year: "2024",
-      title: "Digital Gateway",
-      description: "Rebranded as 'Your Digital Gateway' to reflect our comprehensive services."
     }
   ];
 
@@ -71,25 +66,13 @@ const About = () => {
       name: "Vincent Mutunga",
       role: "Founder & CEO",
       description: "Visionary leader with over 10 years in digital services and customer relations.",
-      image: "/lovable-uploads/team-vincent.jpg"
-    },
-    {
-      name: "Sarah Wanjiku",
-      role: "Operations Manager",
-      description: "Ensures smooth daily operations and maintains our high service standards.",
-      image: "/lovable-uploads/team-sarah.jpg"
-    },
-    {
-      name: "David Kimani",
-      role: "Technical Lead",
-      description: "Expert in computer systems, troubleshooting, and customer technical support.",
-      image: "/lovable-uploads/team-david.jpg"
+      image: "/Assets/team-vincent.jpg"
     },
     {
       name: "Grace Akinyi",
       role: "Customer Service Manager",
       description: "Dedicated to ensuring every customer receives exceptional service and support.",
-      image: "/lovable-uploads/team-grace.jpg"
+      image: "/Assets/team-grace.jpg"
     }
   ];
 
@@ -101,7 +84,7 @@ const About = () => {
       <section className="bg-gradient-to-r from-green-600 via-black to-red-600 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            About Mutunga Enterprise Ltd
+            About Vincom Computers (K) Enterprise
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in">
             Your trusted digital gateway, bridging the gap between traditional services and the digital world
@@ -116,7 +99,7 @@ const About = () => {
             <div className="animate-fade-in">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Founded in 2018, Mutunga Enterprise Ltd began as a small digital service center with a big vision: 
+                Founded in 2012, Vincom Computers (K) Enterprise Ltd began as a small digital service center with a big vision: 
                 to make technology accessible to everyone in Kenya. What started as a simple cyber cafe has evolved 
                 into a comprehensive digital gateway serving thousands of customers.
               </p>
@@ -218,7 +201,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Journey</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Key milestones that have shaped Mutunga Enterprise Ltd into what it is today
+              Key milestones that have shaped Vincom Computers Enterprise Ltd into what it is today
             </p>
           </div>
           
@@ -280,7 +263,7 @@ const About = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Choose Mutunga Enterprise Ltd?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Choose Vincom Computers Enterprise Ltd?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We're more than just a service provider - we're your digital partners
             </p>
@@ -307,7 +290,7 @@ const About = () => {
               <MapPin className="w-12 h-12 text-black mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Convenient Location</h3>
               <p className="text-gray-600">
-                Strategically located in the heart of Nairobi for easy access by public transport.
+                Strategically located in the heart of Homabay County - Sindo town for easy access by public transport.
               </p>
             </div>
           </div>
