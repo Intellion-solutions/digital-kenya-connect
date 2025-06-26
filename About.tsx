@@ -32,7 +32,7 @@ const About = () => {
     {
       year: "2012",
       title: "Foundation",
-      description: "Mutunga Enterprise Ltd was established to bridge the digital divide in Kenya."
+      description: "Vincom Computer Enterprise Ltd was established to bridge the digital divide in Kenya."
     },
     {
       year: "2015",
@@ -66,13 +66,13 @@ const About = () => {
       name: "Vincent Mutunga",
       role: "Founder & CEO",
       description: "Visionary leader with over 10 years in digital services and customer relations.",
-      image: "/Assets/team-vincent.jpg"
+      image: "/assets/team-vincent.jpg"
     },
     {
       name: "Grace Akinyi",
       role: "Customer Service Manager",
       description: "Dedicated to ensuring every customer receives exceptional service and support.",
-      image: "/Assets/team-grace.jpg"
+      image: "/assets/team-grace.jpg"
     }
   ];
 
@@ -84,7 +84,7 @@ const About = () => {
       <section className="bg-gradient-to-r from-green-600 via-black to-red-600 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            About Vincom Computers (K) Enterprise
+            About Vincom Computer (K) Enterprise
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in">
             Your trusted digital gateway, bridging the gap between traditional services and the digital world
@@ -99,7 +99,7 @@ const About = () => {
             <div className="animate-fade-in">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Founded in 2012, Vincom Computers (K) Enterprise Ltd began as a small digital service center with a big vision: 
+                Founded in 2012, Vincom Computer (K) Enterprise Ltd began as a small digital service center with a big vision: 
                 to make technology accessible to everyone in Kenya. What started as a simple cyber cafe has evolved 
                 into a comprehensive digital gateway serving thousands of customers.
               </p>
@@ -201,7 +201,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Journey</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Key milestones that have shaped Vincom Computers Enterprise Ltd into what it is today
+              Key milestones that have shaped Vincom Computer Enterprise Ltd into what it is today
             </p>
           </div>
           
@@ -263,7 +263,7 @@ const About = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Choose Vincom Computers Enterprise Ltd?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Choose Vincom Computer Enterprise Ltd?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We're more than just a service provider - we're your digital partners
             </p>
@@ -302,7 +302,7 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Experience Excellence?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Join thousands of satisfied customers who trust Mutunga Enterprise Ltd for their digital needs.
+            Join thousands of satisfied customers who trust Vincom Computer Enterprise Ltd for their digital needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
